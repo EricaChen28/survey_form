@@ -1,1 +1,108 @@
-<h1 id="title"> What Industry Were You in Before Coding? </h1>
+<!DOCTYPE html>
+<html lang="en">
+
+  <style>
+
+  #title{
+    font-size: 35px;
+    font-family: Helvetica;
+    text-align: center;
+    color:#008080;
+  }
+
+  #description{
+    font-size: 25px;
+    font-family: Helvetica;
+    text-weight: bold;
+    text-align: center;
+    color: #34495E;
+  }
+
+  #survey-form{
+    font-size: 20px;
+    font-family: Helvetica;
+    text-weight: bold;
+    text-align: center;
+    line-height:250%;
+    background-image: -webkit-linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    background-image: -moz-linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    background-image: -o-linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+  }
+
+  #other-job{
+    font-size: 12px;
+    font-family: Helvetica;
+  }
+
+  #additional-comment{
+    font-family: Helvetica;
+    width: 300px;
+    height: 100px;
+  }
+
+  #number{
+    width: 200px;
+  }
+
+  </style>
+
+  <head>
+    <h1 id="title"> What Industry Were You in Before Coding? </h1>
+  </head>
+
+  <body>
+
+    <p id="description">
+      This is a survey where you can share with us about your current/previous job!
+    </p>
+
+    <form id="survey-form">
+
+      <label id="name-label">Name:</label>
+      <input type="text" name="name" id="name" required placeholder="Your Name"></input><br>
+
+      <label id="email-label">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="Your Email"></input><br>
+
+      <label id="number-label">Number of Years:</label>
+      <input type="number" name="number" id="number" min="0" max="100" required placeholder="Working Years"></input><br>
+
+      <label for="Occupations">Choose an Occupation:</label>
+
+      <select id="dropdown" name="Occupations" id="Occupations">
+        <option value="Teacher">Teacher</option>
+        <option value="Sales Associate">Sales Associate</option>
+        <option value="Restaurant Worker">Restaurant Worker</option>
+        <option value="Technician">Technician</option>
+        <option value="Other">Other</option>
+
+        <input type="Other" name="Other" value="Other" selectBoxOptions="Other">
+            <label for="Other" id="other-job"> <-- If you select "Other", Please tell us here!</label>
+
+
+
+      </select><br>
+
+      <input type="radio" id="male" name="gender" value="male">Male<br>
+      <input type="radio" id="female" name="gender" value="female">Female<br>
+      <input type="radio" id="other" name="gender" value="other">Other<br>
+
+      <input type="checkbox" id="satisfaction level" name="Satisfied" value="Satisfied">
+      <label for="vehicle1"> I am/was very satisfied with my current/previous job.</label><br>
+
+      <input type="checkbox" id="satisfaction level2" name="OK Satisfied" value="OK Satisfied">
+      <label for="vehicle2"> I am/was ok satisfied with my current/previous job.</label><br>
+
+      <input type="checkbox" id="satisfaction level3" name="Not Satisfied" value="Not Satisfied">
+      <label for="vehicle3"> I am/was not satisfied with my current/previous job.</label><br>
+
+      <textarea placeholder="Additional Comments" id="additional-comment"></textarea><br>
+
+      <input type="submit" id="submit">
+
+    </form>
+    <script type="text/javascript"  src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js
+    "> </script>
+  </body>
+</html>
